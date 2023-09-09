@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animated Login Sign up section design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="user signin-box">
+            <div class="overlay">
+                <h1>New Here?</h1>
+                <img src="https://us.123rf.com/450wm/siraphol/siraphol1710/siraphol171002018/88883786-frutas-mezcladas-con-pl%C3%A1tano-de-manzana-naranja-y-otro-sobre-fondo-de-madera-estilo-de-comida.jpg?ver=6" alt="">
+                <p>Es una tienda donde ofrece diferentes productos.</p>
+                <button class="signup btn" onclick="toggleForm()">Registrarse.</button>
+            </div>
+            <div class="form-box">
+                <div class="form">
+                    <h2>Iniciar Sesión.</h2>
+                    <div class="social-box">
+                        <a href="#"><img src="images/facebook.svg" alt=""></a>
+                        <a href="#"><img src="images/Twitter.svg" alt=""></a>
+                        <a href="#"><img src="images/Linkedin.svg" alt=""></a>
+                        <p>Formulario de Inicio De Sesión.</p>
+                    </div>
+                    <input type="text" placeholder="Nombre del Usuasio">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="submit" value="Iniciar Sesión">
+                    <p class="footer-text">
+                        Se te olvidó la contraseña.?
+                        <a href="#" onclick="toggleForm()">Regístrate</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="user signup-box">
+            <div class="form-box">
+                <div class="form">
+                    <h2>Sign Up</h2>
+                    <div class="social-box">
+                        <a href="#"><img src="images/facebook.svg" alt=""></a>
+                        <a href="#"><img src="images/Twitter.svg" alt=""></a>
+                        <a href="#"><img src="images/Linkedin.svg" alt=""></a>
+                        <p>Formulario De Registro.</p>
+                    </div>
+                    <input type="text" placeholder="Nombre del Usuario">
+                    <input type="email" placeholder="Correo Electrónico">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="submit" value="Registrarse">
+                    <p class="footer-text">
+                       Desea iniciar sesión?
+                        <a href="#" onclick="toggleForm()">Inicia Sesión.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="overlay">
+                <h1>One of us?</h1>
+                <img src="https://st3.depositphotos.com/1027198/18241/i/450/depositphotos_182415548-stock-photo-collection-of-fresh-fruits-with.jpg" alt="">
+                <p>Es una tienda donde ofrece diferentes productos.</p>
+                <button class="signin btn" onclick="toggleForm()">Iniciar Sesión.</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm(){
+            const container = document.querySelector('.container');
+            container.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
